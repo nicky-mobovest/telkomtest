@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php 
 	echo "Welcome to the telkom test ! <br><br>" ;
 ?>
@@ -20,7 +22,14 @@ if ($data['status'] == 1 ){
 }else {
 	echo $data['response']; 
 }
-	echo print_r($list,true ); 
+$i = 1 ; 
+#	echo print_r($list,true ); 
+
+foreach($list as $row){
+	echo "{$i}. <a href=\"https://github.com/{$username}/{$row['name']}\">{$row['full_name']}</a><br><br>" ;  
+	$i++ ; 
+}
+#	echo print_r($list,true ); 
 
 function getRequest ($url){
 	$ch = curl_init();
@@ -43,3 +52,5 @@ function getRequest ($url){
 
 
 ?>	
+</body>
+</html>
