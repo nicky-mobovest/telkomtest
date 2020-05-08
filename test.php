@@ -1,6 +1,11 @@
 <html>
 <body>
 <?php 
+/*
+ *	created by Nicky Atmadjaja 
+ *
+ *
+ */
 	echo "Welcome to the telkom test ! <br><br>" ;
 ?>
 <?php 
